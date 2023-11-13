@@ -44,6 +44,11 @@ def printDivisors(n):
                     print(n//i)  #This is for printing the other number. Eg: if i==1 then 36//1 =36...Similarly if i==2 which is a divisor then we print (36//2)=18
      i+=1
 
+OUTPUT : 1 36 2 18 3 12 4 9 6 
+"""
+NOTE : This way you can achieve a TC of O(sqrt(N)).
+Only problem is the divisors wont be printed in a sorted order.So we need to explicitly sort them. This would consume extra N(LOG(N)) time complexity.
+"""
 
                     
 
