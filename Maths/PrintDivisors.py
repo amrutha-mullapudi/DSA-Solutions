@@ -33,5 +33,17 @@ APPROACH 2 :
 -> Here we can see that all the numbers which are not equal to or nearly equal to the square root of the number (here it is 36, so square root is 6) have 2 divisors.
 -> if 1 is a divisor of 36 then 36 is also a divisor of 36 .... similarly if 2 is divisible by 36 then 36//2 = 18 is also a divisor of the number 36.
 -> According to this approach it is evident that you do not require an elaborate loop to check from 1 to N for all divisors. You can simply check from 1 to sqrt(N)
-->
+-> IMPORTANT - EDGE CASE HERE : If you see the sqrt(n) is repeated twice ie 6 in this case. So we need to consider printing it only once.
+"""
+def printDivisors(n):
+     i=1
+     while (i*i<=n):
+          if (n%i==0):
+               print(i)
+               if (n//i != i):   #this is to check if we are printing the sqrt(n) only once instead of twice.In this case to make sure we print divisor 6 only once.
+                    print(n//i)  #This is for printing the other number. Eg: if i==1 then 36//1 =36...Similarly if i==2 which is a divisor then we print (36//2)=18
+     i+=1
+
+
+                    
 
