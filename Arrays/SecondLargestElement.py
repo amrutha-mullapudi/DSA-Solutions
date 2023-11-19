@@ -17,6 +17,7 @@ def getSecondOrderElements(n, arr):
     arr.sort()
     #alternatively you can use merge sort also
     return [arr[n - 2], a[1]]
+------------------------------------------------------------------------------------------------------------------------------------------------------------ 
 
 '''
 2.FINDING THE MINIMUM AND MAXIMUM ELEMENT, THEN COMPARING THEM TO FIND THE 2ND_MINIMUM AND 2ND_MAXIMUM
@@ -54,7 +55,8 @@ def getSecondOrderElements(n,a):
             secondLarge = arr[i]
 
     return [secondLarge, secondSmall]
- 
+------------------------------------------------------------------------------------------------------------------------------------------------------------ 
+
 '''
 We can find the solution in a single loop 
 1. Initialise the smallest and largest element to arr[0], and second_largest and second_smallest to 0
