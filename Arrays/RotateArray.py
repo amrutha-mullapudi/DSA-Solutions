@@ -3,7 +3,7 @@ LEETCODE - 189
 PROBLEM LINK : https://leetcode.com/problems/rotate-array/description/
 Given an integer array nums, rotate the array to the right by k steps, where k is non-negative.
 '''
-
+------------------------------------------------------------------------------------------------------------------------
 APPRAOCH 1:
 This is the Brute Force Approach, where we move the elements in the array one at a time.
 Input: arr = [1,2,3,4,5,6,7], k = 3
