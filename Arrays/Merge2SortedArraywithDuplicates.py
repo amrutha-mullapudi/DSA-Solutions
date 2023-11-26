@@ -10,7 +10,9 @@ elements added into a set are by default not sorted.
 def sortedArray(a: [int], b: [int]) -> [int]:
     s=set(a+b)
     return sorted(s)
-
+    
+TC: nLOGn ; SC: O(N)
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 '''
 APPROACH 2 : Using IN PLACE REMOVAL OF DUPLICATES and 2-POINTER APPROACH TO MERGE THE NON-DUPLICATE ARRAYS
 1. Remove the duplicates in place for both the arrays.
