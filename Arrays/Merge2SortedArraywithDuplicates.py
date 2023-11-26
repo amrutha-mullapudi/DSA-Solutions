@@ -15,6 +15,9 @@ TC: nLOGn ; SC: O(N)
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------
 '''
 APPROACH 2 : Using IN PLACE REMOVAL OF DUPLICATES and 2-POINTER APPROACH TO MERGE THE NON-DUPLICATE ARRAYS
+Time Complexity: O((N + M))
+Space Complexity: O(N + M)
+
 1. Remove the duplicates in place for both the arrays.
 MECHANISM :
 1. In this array : arr=[1,2,2,3,3,4,5] ...we can observe that instead of creating a new set and moving elements we can change the elements in place.
@@ -85,8 +88,6 @@ def sortedArray(a: [int], b: [int]) -> [int]:
          j+=1
     return temp
 
-Time Complexity: O((N + M))
-Space Complexity: O(N + M)
 ----------------------------------------------------------------------------------------------------------------------------------------------------
 '''
 APPROACH 3 : MORE OPTIMISED AND EASIER
