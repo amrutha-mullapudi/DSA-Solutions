@@ -6,7 +6,7 @@ LEETCODE 26 - Remove Duplicates from Sorted Array
 APPROACH 1:
 BRUTE FORCE :
 1. In order to remove the duplicates prevelant in the array, add them into a set.
-2. A set removes the duplicate elements which are added. Added benefit is it stores the numbers added in a sorted order.
+2. A set removes the duplicate elements which are added.
 3. Again move the elements from set to the array (as required per the problem statement)
 4. The length of the set is the count of unique elements in the array.
 '''
