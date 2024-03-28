@@ -24,8 +24,8 @@ MECHANISM :
 1. In this array : arr=[1,2,2,3,3,4,5] ...we can observe that instead of creating a new set and moving elements we can change the elements in place.
 2. But instead of swapping elements here, we can just change their values using 2 pointer approach.
 3. Consider p1=0; p2=1 (only when length of input array more than 1)
-4. LOGIC : if arr[p1]<arr[p2]; we update the arr[p1+1] element to the value which is present in arr[p2] 
-           if arr[p1] == arr[p2] or arr[p1]>arr[p2] we simply increase the p2++ pointer
+4. LOGIC : if arr[p1]>arr[p2]; we update the arr[p1+1] element to the value which is present in arr[p2] 
+           if arr[p1] == arr[p2] or arr[p1]<arr[p2] we simply increase the p2++ pointer
 
 EXPLANATION :
 initially p1=0,p2=1 => IS arr[p1]<arr[p2]? (yes) => arr[p1+1] = arr[p2]; which means arr[0+1] = 2 (increment p1, p2)
