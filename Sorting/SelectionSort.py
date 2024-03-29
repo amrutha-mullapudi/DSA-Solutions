@@ -7,14 +7,15 @@ def selectionSort(arr: List[int]) -> None:
     # Write your code here
     n=len(arr)
     for i in range(n):
-        min=arr[i]
+        mini=i
         j=i+1
-        while (j<n):
-            if arr[j]<arr[i]:
-                temp=arr[j]
-                arr[j]=arr[i]
-                arr[i]=temp
+        while j<n:
+            if arr[j]<arr[mini]:
+                mini=j
             j+=1
+        temp=arr[i]
+        arr[i]=arr[mini]
+        arr[mini]=temp
     return arr
 
 """
